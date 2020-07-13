@@ -1,0 +1,46 @@
+.board {
+  display: flex;
+  justify-content: space-between;
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.list {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card,
+.list__content {
+  border-radius: 10px;
+  padding: 20px;
+  transition: 400ms;
+}
+
+.list__content {
+  background-color: #FFF;
+  flex: 1;
+}
+
+.list__content.highlight {
+  background-color: #22222211;
+}
+
+.list__content.over {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.card {
+  background-color: #BBB;
+  margin-bottom: 20px;
+}
+
+.card.dragging {
+  opacity: 0.3;
+}
+
+.card  h3{
+  margin: 0;
+}
